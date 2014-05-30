@@ -28,8 +28,9 @@ do
 done
 
 for p in pambase-selinux pam-selinux coreutils-selinux shadow-selinux \
-         cronie-selinux sudo-selinux util-linux-selinux systemd-selinux \
-         openssh-selinux findutils-selinux psmisc-selinux
+         cronie-selinux sudo-selinux dbus-selinux util-linux-selinux  \
+         systemd-selinux openssh-selinux findutils-selinux psmisc-selinux \
+         iproute2-selinux logrotate-selinux
 do
 	pushd ${p}
 	pkgclean
